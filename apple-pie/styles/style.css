@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Corrige el error tipográfico aquí */
+    
+}
+img {
+    width: 100%;
+    height: auto;
+    max-height: 800px;
+}
+#principal-title {
+    text-align: center;
+    position: relative;
+}
+
+#principal-title h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    font-size: 140px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.introduction {
+    margin: 80px 0; /* Margen superior e inferior de 80px, margen izquierdo y derecho 0 */
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: justify;
+    margin-bottom: 30px;
+}
+
+.icon {
+    font-size: 24px;
+    margin-left: 5px;
+    vertical-align: middle;
+    margin: 15px;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+info-container span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divider {
+    border-bottom: 1px solid #000;
+    width: 80%;
+    margin: 50px auto;
+}
+
+#ingredients {
+    text-align: left;
+    font-size: 24px;
+    margin: 50px auto; 
+    padding: 50px;
+}
+
+#ingredients h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-left: 14rem;
+}
+
+#ingredients ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 15rem;
+}
+
+#ingredients ul li::before {
+    content: "-";
+}
+
+.ingredients-container {
+    margin-left: 3rem; 
+}
+.recipe-info {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.recipe-info-item {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin: 40px 30px;
+}
+
+.info-top {
+    display: flex;
+    align-items: center;
+}
+
+.info-bottom {
+    margin-top: 20px;
+    
+}
+
+.vertical-line {
+    border-left: 1px solid #000;
+    height: 120px;
+    margin: 0 10px;
+}
+.icon {
+    font-size: 24px;
+    margin-right: 5px; /* Ajusta el margen a la derecha del icono */
+}
+#instructions{
+    text-align: left;
+    font-size: 24px;
+    margin: 10px auto; 
+    padding: none;
+    margin-left: 18rem;
+    margin-bottom: 5em;
+}
+.copyright {
+    text-align: center;
+}
+
+
+@media (min-width: 768px) {
+    #principal-title h1 {
+        font-size: 140px;
+    }
+
+    .introduction {
+        font-size: 28px;
+    }
+
+    .icon {
+        font-size: 24px;
+    }
+
+    .divider {
+        width: 80%;
+    }
+
+    #ingredients ul {
+        margin-left: 15rem;
+    }
+
+    #instructions {
+        margin-left: 18rem;
+    }
+}
+
+/* responsiveness */
+
+@media (max-width: 767px) {
+    #principal-title h1 {
+        font-size: 80px;
+    }
+
+    .introduction {
+        font-size: 20px;
+        text-align: center;
+        margin-left: 20px;
+    }
+
+    .icon {
+        font-size: 20px;
+    }
+
+    .divider {
+        width: 60%;
+    }
+
+    #ingredients ul {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #instructions {
+        margin-left: 0;
+        text-align: center;
+    }
+}
